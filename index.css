@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url("https://wallpaperplay.com/walls/full/3/d/6/109609.jpg") no-repeat center fixed;
+    background-size: cover;
+    font-family: sans-serif;
+    color: red;
+  }
+  .banner{
+    margin-top: 50px
+  }
+  
+  .start-quiz{
+    text-align: center;
+   
+  }
+
+  .question-score{
+    text-align: center;
+  }
+  .numBanner{
+    padding-left: 5px;
+  }
+  h1{
+   display: block;
+   text-align: center;
+   
+  }
+  
+  main{
+    text-align: center;
+    margin-top: 200px;
+    background-color: black;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+  .enter-button{
+    display: inline;
+    background-color: blue;
+    color: white;
+  }
+
+  .enter-button:hover{
+    
+    font-size: 20px;
+    background-color: rgb(238, 241, 15);
+    color: black;
+
+  }
+
+  li{
+    list-style: none;
+  }
+
+  fieldset{
+    border: none;
+    
+  }
+
+  * {
+      box-sizing: border-box;
+  }
+
+  @media screen and (max-width: 830px) {
+  body {
+    font-size: 15px; 
+    background-size: 830px;
+    background-color: black;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  body {
+    font-size: 15px; 
+    background-size: 550px;
+    background-color: black;
+
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main {
+  width: 400px;
+    
+  }
+}
+  
+  
+
+
