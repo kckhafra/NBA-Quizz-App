@@ -10,22 +10,22 @@ function generateQuestion() {
         
         <label>
           <input type="radio" value="${STORE[currentQuestion-1].answers[0]}" name="answers" required></input>
-          <span>${STORE[currentQuestion-1].answers[0]} </span>
+          <span class = "answer-choice">${STORE[currentQuestion-1].answers[0]} </span>
         </label>
 
         <label>
           <input type="radio" value="${STORE[currentQuestion-1].answers[1]}" name="answers" required></input>
-          <span>${STORE[currentQuestion-1].answers[1]} </span>
+          <span class = "answer-choice">${STORE[currentQuestion-1].answers[1]} </span>
         </label>
 
         <label>
             <input type="radio" value="${STORE[currentQuestion-1].answers[2]}" name="answers" required></input>
-            <span>${STORE[currentQuestion-1].answers[2]} </span>
+            <span class = "answer-choice">${STORE[currentQuestion-1].answers[2]} </span>
         </label>
 
         <label>
           <input type="radio" value="${STORE[currentQuestion-1].answers[3]}" name="answers" required></input>
-          <span>${STORE[currentQuestion-1].answers[3]} </span>
+          <span class = "answer-choice">${STORE[currentQuestion-1].answers[3]} </span>
         </label>
       </fieldset>
       

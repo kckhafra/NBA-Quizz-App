@@ -46,6 +46,7 @@ body {
   }
 
   .enter-button:hover{
+    cursor: pointer;
     font-size: 20px;
     border-color: red;
   }
@@ -66,7 +67,9 @@ body {
 
   input {
     margin-right: 5px;
-    
+  }
+  input, .answer-choice:hover{
+    cursor: pointer;
   }
 
 
