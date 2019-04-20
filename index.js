@@ -1,4 +1,3 @@
-
 let currentQuestion = 1;
 let score = 0;
 
@@ -7,23 +6,30 @@ function generateQuestion() {
     <form class="form-questions">
       <fieldset>
         <legend>NBA Questions</legend>
-        <label class = "question"> ${STORE[currentQuestion-1].question} </label>
-          <ul>
-            <li> <input type="radio" value="${STORE[currentQuestion-1].answers[0]}" name="answers" required>
-              <span>${STORE[currentQuestion-1].answers[0]} </span>
-            </li>
-            <li> <input type="radio" value="${STORE[currentQuestion-1].answers[1]}" name="answers" required>
-              <span>${STORE[currentQuestion-1].answers[1]} </span>
-            </li>
-            <li> <input type="radio" value="${STORE[currentQuestion-1].answers[2]}" name="answers" required>
-              <span>${STORE[currentQuestion-1].answers[2]} </span>
-            </li>
-            <li> <input type="radio" value="${STORE[currentQuestion-1].answers[3]}" name="answers" required>
-              <span>${STORE[currentQuestion-1].answers[3]} </span>
-            </li>
-          </ul>
-        <button type="submit" value="submit" class= "submit-button">Submit</button>
+        <section class = "question"> ${STORE[currentQuestion-1].question} </section>
+        
+        <label>
+          <input type="radio" value="${STORE[currentQuestion-1].answers[0]}" name="answers" required></input>
+          <span>${STORE[currentQuestion-1].answers[0]} </span>
+        </label>
+
+        <label>
+          <input type="radio" value="${STORE[currentQuestion-1].answers[1]}" name="answers" required></input>
+          <span>${STORE[currentQuestion-1].answers[1]} </span>
+        </label>
+
+        <label>
+            <input type="radio" value="${STORE[currentQuestion-1].answers[2]}" name="answers" required></input>
+            <span>${STORE[currentQuestion-1].answers[2]} </span>
+        </label>
+
+        <label>
+          <input type="radio" value="${STORE[currentQuestion-1].answers[3]}" name="answers" required></input>
+          <span>${STORE[currentQuestion-1].answers[3]} </span>
+        </label>
       </fieldset>
+      
+      <button type="submit" value="submit" class= "submit-button">Submit</button>
     </form>`;   
 }
 

@@ -3,7 +3,7 @@ const STORE = [
     { 
       number: 1,
       question: "Who is leading the NBA in 3pt fg?",
-      answers: ["Steph Curry", "James Harden", "Klay Thompson", "Damina Lilard"], 
+      answers: ["Steph Curry", "James Harden", "Klay Thompson", "Damian Lilard"], 
       correctAnswer: "James Harden"
     },
   
