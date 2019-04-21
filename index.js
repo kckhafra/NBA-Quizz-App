@@ -1,6 +1,9 @@
 let currentQuestion = 1;
 let score = 0;
 
+
+
+
 function generateQuestion() {
   return `
     <form class="form-questions">
@@ -33,8 +36,24 @@ function generateQuestion() {
     </form>`;   
 }
 
+function generateIcon(){
+  return `
+  <img src = ${STORE[currentQuestion-1].icon} alt=${STORE[currentQuestion-1].alt}>`
+}
+function addIcon() {
+  $(".icon").html(generateIcon());
+  $("div").removeClass("remove")
+  $("main").removeClass("main-noicon")
+}
+
+function eraseIcon(){
+  $("div").addClass("remove")
+
+}
+
 function startQuiz() {
   $('main').html(generateQuestion());
+  addIcon();
 }
 
 function handleEnterButton(){
@@ -49,7 +68,7 @@ function handleSubmitButton() {
     event.preventDefault();
    
     handleUserAnswer()
-    
+    eraseIcon();
   })
 }
 /*let correctAnswer = STORE[currentQuestion-1].answers[STORE[currentQuestion-1].correctAnswer]*/
@@ -60,9 +79,12 @@ function handleUserAnswer() {
   console.log(correctAnswer)
   if (selectedAnswer===correctAnswer) {
     ifAnswerCorrect() 
+    $("main").addClass("main-noicon")
+
   }
   else {
     ifAnswerWrong()
+    $("main").addClass("main-noicon")
   }
 }
 
@@ -71,6 +93,7 @@ function ifAnswerCorrect(){
   $("main").html(function(){
     return `
       <h2> CONGRATULATIONS</h2> 
+      <img src = "https://media2.giphy.com/media/Nszyp6d42uqd7ppDBi/200w.webp?cid=790b76115cbc972a5848456677599ec4">
       <p> Your knowledge of basketball is at an all time high. <p>
       <button value="Next" class= "next-button">Next</button>`
   })
@@ -80,6 +103,7 @@ function ifAnswerWrong(){
   $("main").html(function(){
     return `
       <h2> YOUR ANSWER IS WRONG </h2> 
+      <img src="https://media0.giphy.com/media/ROjyrAKOhMMms/200w.webp?cid=790b76115cbc95d475464c396b38e63f">
       <p> The correct answer is ${STORE[currentQuestion-1].correctAnswer}<p>
       <button value="Next" class= "next-button">Next</button>`
   })
@@ -92,6 +116,9 @@ function handleNextButton(){
     iterateQuestion();
     $('main').html(generateQuestion());
     updateQuestion()
+    $("div").removeClass("remove")
+    $("main").removeClass("main-noicon")
+    addIcon();
     }
    else {
     results()
@@ -152,6 +179,7 @@ function handleRestartButton(){
     event.preventDefault();
     restartQuestionScore();
     startQuiz();
+    
     
     
     

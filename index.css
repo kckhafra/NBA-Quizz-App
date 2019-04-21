@@ -16,6 +16,21 @@ body {
     text-align: center;
    
   }
+  .icon{
+    text-align: center;
+    margin-top: 100px;
+   
+  }
+
+  .remove{
+    display: none;
+  }
+
+  img{
+    text-align: center;
+    height: 150px;
+    width: 150px;
+  }
 
   .question-score{
     text-align: center;
@@ -29,14 +44,23 @@ body {
    
   }
   
-  main{
+  .main-icon{
+    text-align: center;
+    margin-top: 20px;
+    background-color: black;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+  .main-noicon{
     text-align: center;
     margin-top: 200px;
     background-color: black;
     width: 450px;
     margin-left: auto;
     margin-right: auto;
-    
   }
 
   .enter-button, .submit-button, .next-button, .restart-button{
@@ -79,7 +103,7 @@ body {
   @media screen and (max-width: 830px) {
   body {
     font-size: 15px; 
-    background-size: 830px;
+    background-size: 800px;
     background-color: black;
   }
 }
@@ -87,26 +111,49 @@ body {
 @media screen and (max-width: 550px) {
   body {
     font-size: 15px; 
-    background-size: 550px;
+    background-size: 500px;
     background-color: black;
 
   }
 }
 
 @media screen and (max-width: 550px) {
-  main {
-  width: 200px;
+  .main-noicon {
+  width: 150px;
     
   }
 }
 
 @media screen and (max-width: 830px) {
-  main {
-  width: 300px;
+  .main-noicon {
+  width: 250px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .main-icon {
+  width: 150px;
     
   }
 }
-  
-  
 
+@media screen and (max-width: 830px) {
+  .main-icon {
+  width: 250px;
+  }
+}
+  
+@media screen and (max-width: 550px) {
+  img {
+    height: 50px;
+    width: 50px;
+  }
+}
+  
+@media screen and (max-width: 830px) {
+  img {
+    height: 100px;
+    width: 100px;
+  }
+}
 
