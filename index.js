@@ -39,7 +39,7 @@ function startQuiz() {
 
 function handleEnterButton(){
   $(".enter-button").on("click", function(){
-     updateQuestion()
+    updateQuestion()
     startQuiz();
   })
 }
@@ -138,11 +138,22 @@ function results() {
 
   })
 }
+function restartQuestionScore(){
+  currentQuestion = 1
+  $(".js-question").text(currentQuestion)
+  score = 0;
+  $(".js-score").text(score)
+}
+
 
 function handleRestartButton(){
   $('main').on("click", ".restart-button", 
   function() {
-    location.reload();
+    event.preventDefault();
+    restartQuestionScore();
+    startQuiz();
+    
+    
     
   })
 }

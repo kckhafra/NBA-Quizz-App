@@ -39,17 +39,19 @@ body {
     
   }
 
-  .enter-button{
+  .enter-button, .submit-button, .next-button, .restart-button{
     display: inline;
     background-color: blue;
     color: white;
   }
 
-  .enter-button:hover{
+  .enter-button:hover, .submit-button:hover, .next-button:hover, .restart-button:hover {
     cursor: pointer;
     font-size: 20px;
     border-color: red;
   }
+
+  
 
   fieldset{
     display: flex;
