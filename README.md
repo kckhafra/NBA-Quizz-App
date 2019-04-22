@@ -2,8 +2,8 @@
 Thinkful Full Stack Module 8: Interactive Web Apps
 
 <h2>Description</h2>
-<p> The goal of this assignment was to create a quizz app that asked users questions and allowed for the user to choose their answers from multiple choice drop down selections. The user should be able to cipher through and answer ten questions, all the while being able to their current question and score. The users should also get feedback for each question, informing the user when they got a question wrong or right. The last page should display the results and allow the user to restart the app<p/> 
-<p>The Quiz App project was a chance for me to show my comprhensive skill learned from the thinkful bootcamp. I was responsible for every aspect of the app, icluding the following:</p>
+<p> The goal of this assignment was to create a quizz app that asked users questions and allowed for the user to choose their answers from multiple choice drop down selections. The user should be able to cipher through and answer ten questions, all the while being able to see their current question and score. The users should also get feedback for each question. This feedback should inform the user when they got a question wrong or right. The last page should display the results and allow the user to restart the app<p/> 
+<p>The Quiz App project was a chance for me to show my comprehensive skills learned from the thinkful bootcamp. I was responsible for every aspect of the app, icluding the following:</p>
 <ul>
   <li>Wireframing my quiz app. I essentially created a skeleton of my app for planning purposes </li>
   <li>Using semantic HTML and clean javascript code to ensure coders can read and make sense of my code</li>
@@ -43,4 +43,5 @@ Thinkful Full Stack Module 8: Interactive Web Apps
     <li>Process requirements</li>
    </ul>
  </section>
+ 
  
